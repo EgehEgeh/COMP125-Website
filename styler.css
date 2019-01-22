@@ -1,7 +1,12 @@
 ﻿body {
-    background-color: steelblue;   
+    background-color: aliceblue;   
 }
 
 h1 {
     background-color: grey;
+}
+
+td {
+    border-style: solid;
+    border: black;
 }
