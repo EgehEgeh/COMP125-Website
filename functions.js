@@ -1,14 +1,18 @@
-var hamburgerPrice = 6.99;
-var chickenburgerPrice = 6.99;
-var veggieburgerPrice = 7.99;
-var smallFry = 1.99;
-var medFry = 2.99;
-var bigFry = 3.99;
-var smallDrink = 0.99;
-var medDrink = 1.99;
-var bigDrink = 2.99;
+function calcTotal() {
+    var total = 0;
+    var tax = 1.13;
+    var items = document.getElementsByTagName("input");
+    for (var i = 0; i < 8; i++) {
+        if (items[i].checked) {
+            total += (items[i].value * tax);
+        }
+    }
+    document.getElementById("total").innerHTML = "Your total is $" + total;
+}
 
-function thing {
-    
-} 
-
+var submit = document.getElementById("itemSubmit");
+if (submit.addEventListener) {
+    submit.addEventListener("click", calcTotal, false);
+} else if (submit.attachEvent) {
+        submit.attachEvent("onclick", calcTotal); 
+}

@@ -22,30 +22,32 @@
     </header>
     <form>
         <input type="checkbox" id="hamburger" value="6" />
-         <label for="hamburger">Hamburger ($6.00)</label>
-         <input type="checkbox" id="chickenBurger" value="6" />
-         <label for="chickenBurger">Chicken Burger ($6.00)</label>
-         <input type="checkbox" id="veggieBurger" value="7" />
-         <label for="veggieBurger">Veggie Burger ($7.00)</label>
-    <table>
-        <tr>
-            <td><input type="checkbox" id="smallFry" value="1" />
-                <label for="smallFries">Small Fries ($1.00)</label></td>
-            <td><input type="checkbox" id="medFry" value="2" />
-                <label for="medFries">Medium Fries ($2.00)</label></td>
-            <td><input type="checkbox" id="bigFry" value="3" />
-                <label for="bigFries">Large Fries ($3.00)</label></td>         
-        </tr>
-        <tr>
-            <td><input type="checkbox" id="smallDrink" value="1" />
-                <label for="smallDrink">Small Drink ($1.00)</label></td>
-            <td><input type="checkbox" id="medDrink" value="2" />
-                <label for="medDrink">Medium Drink ($2.00)</label></td>
-            <td><input type="checkbox" id="bigDrink" value="3" />
-                <label for="bigDrink">Large Drink ($3.00)</label></td>          
-        </tr>
-    </table>
+        <label for="hamburger">Hamburger ($6.00)</label>
+        <input type="checkbox" id="chickenBurger" value="6" />
+        <label for="chickenBurger">Chicken Burger ($6.00)</label>
+        <input type="checkbox" id="veggieBurger" value="7" />
+        <label for="veggieBurger">Veggie Burger ($7.00)</label>
+        <table>
+            <tr>
+                <td><input type="checkbox" id="smallFry" value="1" />
+                    <label for="smallFries">Small Fries ($1.00)</label></td>
+                <td><input type="checkbox" id="medFry" value="2" />
+                    <label for="medFries">Medium Fries ($2.00)</label></td>
+                <td><input type="checkbox" id="bigFry" value="3" />
+                    <label for="bigFries">Large Fries ($3.00)</label></td>         
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="smallDrink" value="1" />
+                    <label for="smallDrink">Small Drink ($1.00)</label></td>
+                <td><input type="checkbox" id="medDrink" value="2" />
+                    <label for="medDrink">Medium Drink ($2.00)</label></td>
+                <td><input type="checkbox" id="bigDrink" value="3" />
+                    <label for="bigDrink">Large Drink ($3.00)</label></td>          
+            </tr>
+        </table>
+        <div><p id="total"></p></div>
+        <input type="button" id="itemSubmit" value="Submit Order">
     </form>
-    <input type="submit" id="itemSubmit" value="Submit Order">
+    <script src="functions.js"></script>
 </body>
 </html>
