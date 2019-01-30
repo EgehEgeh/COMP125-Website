@@ -1,17 +1,22 @@
-﻿body {
+﻿
+body {
     background-color: whitesmoke;
-    margin: 0;
-    padding: 10px;
+    width: 960px;
     font-family: Arial;
+    margin: 0 auto;
 }
 
-td {
+table {
+    width: 35%;
+}
+
+th {
+    background-color: red;
+}
+
+th, td {
     border-style: solid;
-    border: black;
-}
-
-header {
-    background-color: dimgray;
+    border: black 1 px;
 }
 
 header::after {
@@ -21,26 +26,27 @@ header::after {
 }
 
 .navbar {
-    width: 90%;
-    margin: 0 auto;
-}
-
-nav {
     float: right;
+    width: 100%;
+    margin: 0 auto;
+    background: black;
 }
 
-nav ul {
-    margin: 0;
-    list-style: none;
+.navbar a {
+    text-align: center;
+    padding: 22px 25px;
+    float: left;
 }
 
-nav li {
-    display: inline-block;
-    margin-left: 50px;
-    padding-right: 20px;
+.navbar a.active {
+    background: cyan;
 }
 
 #restoLogo {
     float: left;
     padding: 10px 10px;
+}
+
+.content {
+    background-color: goldenrod;
 }
