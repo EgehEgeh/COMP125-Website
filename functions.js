@@ -7,7 +7,7 @@ function calcTotal() {
             total += (items[i].value * tax);
         }
     }
-    document.getElementById("total").innerHTML = "Your total is $" + total;
+    document.getElementById("total").innerHTML = "Your total is $" + total.toFixed(2);
 }
 
 var submit = document.getElementById("itemSubmit");
