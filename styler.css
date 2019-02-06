@@ -7,14 +7,17 @@ body {
 }
 
 table {
-    width: 35%;
+    margin: auto;
 }
 
 th {
-    background-color: red;
+    background-color: aliceblue;
+    border-style: solid;
+    border: black 1 px
 }
 
-th, td {
+td {
+    background-color: white;
     border-style: solid;
     border: black 1 px;
 }
