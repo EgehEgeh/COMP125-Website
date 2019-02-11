@@ -53,3 +53,7 @@ header::after {
 .content {
     background-color: goldenrod;
 }
+
+.bigImageHolder {
+    margin: 0 auto;
+}
