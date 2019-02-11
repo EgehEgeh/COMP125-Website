@@ -1,9 +1,18 @@
-﻿
-body {
-    background-color: grey;
-    width: 960px;
+﻿body {
+    background-color: white;
     font-family: Arial;
-    margin: 0 auto;
+}
+
+.container {
+    background-color: gray;
+    width: 1000px;
+    margin: auto;
+}
+
+.gallery {
+    background-color: gray;
+    width: 1000px;
+    margin: auto;
 }
 
 table {
@@ -29,10 +38,10 @@ header::after {
 }
 
 .navbar {
-    float: right;
+    float: left;
     width: 100%;
-    margin: 0 auto;
     background: black;
+    padding: 0;
 }
 
 .navbar a {
@@ -50,10 +59,21 @@ header::after {
     padding: 10px 10px;
 }
 
-.content {
-    background-color: goldenrod;
+#bigImage {
+    display: flex;
+    width: 50%;
+    margin: auto;
 }
 
-.bigImageHolder {
-    margin: 0 auto;
+#thumbnailsHolder {
+    cursor: pointer;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-content: center;
+}
+
+#thumbnailsHolder img {
+    height: 100px;
 }
