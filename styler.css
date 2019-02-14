@@ -5,7 +5,7 @@
 
 .container {
     background-color: gray;
-    width: 1000px;
+    width: 960px;
     margin: auto;
 }
 
@@ -60,6 +60,7 @@ header::after {
 }
 
 #bigImage {
+    cursor: pointer;
     display: flex;
     width: 50%;
     margin: auto;
@@ -70,10 +71,10 @@ header::after {
     margin: 5px auto;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
     align-content: center;
 }
 
 #thumbnailsHolder img {
-    height: 100px;
+    height: 200px;
+    flex-grow: 1;
 }

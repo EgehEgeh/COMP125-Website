@@ -1,12 +1,7 @@
-var bigImage = document.getElementById("bigImageHolder");
-var thumbnailsHolder = document.getElementById("thumbnailsHolder");
+bigImage = document.getElementById('bigImage');
+const thumbs = document.querySelectorAll('#thumbnailsHolder img');
+thumbs.forEach(img => img.addEventListener('click', imgClick));
 
-function imgFunc() {
-    thumbnailsHolder.addEventListener("click", function (event) {
-        if (event.target.tagName == "IMG") {
-            bigImage.src = event.target.src;
-        }
-    }, false);
+function imgClick (e) {
+    bigImage.src = e.target.src;
 }
-
-window.addEventListener("load", imgFunc, false);
