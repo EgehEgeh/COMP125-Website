@@ -34,5 +34,5 @@ function calendarPopulator() {
     }
 }
 
-window.addEventListener ("load", addColumnHeaders, false);
-window.addEventListener ("load", calendarPopulator, false);
+$(document).ready(addColumnHeaders);
+$(document).ready(calendarPopulator);
