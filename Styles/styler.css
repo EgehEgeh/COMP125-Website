@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+form {
+    padding: 10px;
+}
+
 .centre {
     text-align: center;
 }
@@ -16,10 +20,6 @@
 .gallery {
     background-color: gray;
     width: 1000px;
-    margin: auto;
-}
-
-table {
     margin: auto;
 }
 
@@ -58,6 +58,7 @@ header::after {
     background: cyan;
 }
 
+
 #restoLogo {
     float: left;
     padding: 10px 10px;
@@ -82,3 +83,19 @@ header::after {
     height: 200px;
     flex-grow: 1;
 }
+
+#registrationForm {
+    background-color: khaki;
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
